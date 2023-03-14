@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <%- include('../patrials/header'); %>
+
+            <section class="shop__title flex justify-start items-center pt-18 px-32 text-2xl font-bold">
+                <a href="/">Trang chủ</a>
+                <span class="mx-2">/</span>
+                <a href="/shop/:slug">Cửa hàng</a>
+                <span class="mx-2">/</span>
+                <a href="" class="carte__active" id="cateName">Bánh Macaron</a>
+            </section>
+
+            <section class="shop__main flex mx-auto justify-between">
+                <div class="shop__main--left bg-slate-100 w-1/3 px-10 py-20">
+                    <div class="thumbnail" id="cateThumbnail">
+
+                    </div>
+                    <div class="search my-10">
+                        <form>
+                            <input type="text" name="search" id="search2">
+                            <button id="btnSearch" type="button">
+                                <i class='bx bx-search bx-sm'></i>
+                            </button>
+                        </form>
+
+
+                    </div>
+                    <ul class="cate-list list-disc ml-5 text-2xl">
+                        <li>
+                            <a class="block mb-2" href="/shop/1">Bánh Macaron</a>
+                        </li>
+                        <li>
+                            <a class="block my-2" href="/shop/2">Bánh Tiramisu</a>
+                        </li>
+                        <li>
+                            <a class="block my-2" href="/shop/3">Bánh Donut</a>
+                        </li>
+                        <li>
+                            <a class="block my-2" href="/shop/4">Bánh Crepes</a>
+                        </li>
+                        <li>
+                            <a class=" block my-2" href="/shop/5">Bánh Pancake</a>
+                        </li>
+                        <li>
+                            <a class="block my-2" href="">Tất cả</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop__main--right w-[64%] pl-10 py-10">
+                    <div id="cateInfo" class="right-descr-title pl-10"> </div>
+                    <div class="right__main">
+                        <ul class="title-top flex justify-between text-xl pr-5">
+                            <li class="pb-2 "><i class='bx bxs-dashboard bx-sm'></i></li>
+                            <li class="pb-2 px-5 active">Tất cả</li>
+                            <li class="pb-2 px-5 ">Phổ biến</li>
+                            <li class="pb-2 px-5 ">Bán chạy</li>
+                            <li class="pb-2 px-5 ">Giá thấp</li>
+                            <li class="pb-2 px-5 ">Giá cao</li>
+                        </ul>
+                        <hr>
+                        <div class="grid grid-cols-3 gap-7 mt-8" id="productByCategory"></div>
+                    </div>
+                </div>
+            </section>
+
+            <%- include ('../patrials/footer.ejs')%>
+
+    </div>
+
+    <script>
+        let searchfunc = () => {
+            let query = document.getElementById('search2').value;
+            console.log(query);
+
+            fetch(`http://localhost:3000/api/products/search/${query}`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    window.location = `http://localhost:3000/shop/search/${query}`;
+                })
+        }
+
+        let search = document.getElementById('btnSearch');
+        search.addEventListener("click", searchfunc);
+
+        let card = (product) => {
+            let html = `
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/${product.cateId}/${product.id}">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden"
+                                src="/${product.thumbnail}"
+                                alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                ${product.name}
+                            </h4>
+                            <p class="price">
+                                ${product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" })}    
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            `;
+            document.getElementById('productByCategory').innerHTML += html;
+        }
+
+        fetch(`http://localhost:3000/api/products/category/<%= cateId %>`)
+            .then(res => res.json())
+            .then((products => {
+                products.forEach(product => {
+                    console.log(product);
+                    card(product)
+                })
+            }))
+
+        fetch(`http://localhost:3000/api/categories/<%= cateId %>`)
+            .then(res => res.json())
+            .then((category => {
+                document.getElementById('cateName').innerHTML = category.name;
+                document.getElementById('cateInfo').innerHTML += `
+                    <span class="title text-4xl font-medium">${category.name}</span>
+                    <p class="descrt text-xl">
+                        ${category.descr}
+                    </p>
+                `;
+                document.getElementById('cateThumbnail').innerHTML += `
+                    <img class="img-under"
+                        src="/${category.thumbnail}" alt="">
+                    <img class="img-above"
+                        src="/${category.thumbnail}" alt="">
+                `;
+            }))
+    </script>
+</body>
+
+</html>

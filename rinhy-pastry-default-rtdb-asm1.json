@@ -1,0 +1,129 @@
+{
+  "billDetail": [
+    null,
+    {
+      "billId": 1,
+      "productName": "Macaron bạc hà",
+      "productPrice": 27000,
+      "productQuantity": 1,
+      "userId": 2
+    }
+  ],
+  "bills": [
+    null,
+    {
+      "address": "192 Đường Phạm Đức Sơn, Phường 16, Quận 8, Thành phố Hồ Chí Minh, Vietnam",
+      "date": "14/11/2022",
+      "id": 1,
+      "phone": "192 Đường Phạm Đức Sơn, Phường 16, Quận 8, Thành phố Hồ Chí Minh, Vietnam",
+      "status": 3,
+      "total": 100000,
+      "userId": 3
+    },
+    {
+      "address": "Đường 10, Phường 9, Gò Vấp, Thành phố Hồ Chí Minh, Vietnam",
+      "date": "14/11/2022",
+      "id": 2,
+      "phone": 123456789,
+      "status": "waiting",
+      "total": 30000,
+      "userId": 2
+    }
+  ],
+  "categories": [
+    null,
+    {
+      "descr": "Bánh Macaron là loại bánh ngọt được làm từ nguyên liệu chính là trứng, đường cát, bột hạnh nhân, và một ít màu thực phẩm. Phủ bên trong lớp bánh giòn tan là lớp nhân được làm từ kem bơ hoặc mứt. Là chiếc bánh được mệnh danh là nàng tiểu thư bánh đỏng đảnh của nước Pháp bởi vẻ kiêu kỳ, nhìn thì đơn giản nhưng để làm ra chiếc bánh không hề đơn giản chút nào.",
+      "id": 1,
+      "name": "Bánh Macaron",
+      "thumbnail": "images/products/macaron-main.png"
+    },
+    {
+      "descr": "Tiramisu là một loại bánh ngọt tráng miệng có hương vị café rất nổi tiếng tại Ý và nhiều quốc gia trên thế giới. Món bánh này bao gồm các lớp bánh quy Savoiardi được nhúng vào café, sau đó xếp xen kẽ với hỗn hợp trứng, đường, phô mai mascarpone được đánh bông lên, trên mặt bánh người ta sẽ rắc thêm chút bột cacao vô cùng hấp dẫn.",
+      "id": 2,
+      "name": "Bánh Tiramisu",
+      "thumbnail": "images/products/tiramisu-main.jpg"
+    },
+    {
+      "descr": "Bánh Donut - bánh vòng là một loại bánh ngọt rán hoặc nướng để ăn tráng miệng hay ăn vặt. Đây là loại bánh rất nổi tiếng và phổ biến ở nhiều nước phương Tây, bánh thường có dạng hình vòng nhồi nhân bên trong hoặc không nhồi nhân bên trong. Ngoài ra, bánh Donut cũng có thể được tạo thành hình dạng khác như hình tam giác, hình cầu dẹt, quả bóng hoặc hình xoắn.",
+      "id": 3,
+      "name": "Bánh Donut",
+      "thumbnail": "images/products/donut-main.jpg"
+    },
+    {
+      "descr": "Có xuất xứ từ châu Âu, bánh Crepe đang dần trở thành món ăn vặt yêu thích của giới trẻ Việt Nam hiện nay. Với vỏ bánh mỏng, mềm cùng hương thơm nức mũi từ các nguyên liệu chế biến như: trứng, sữa, đường,… mang đến vị béo ngậy cho bánh crepe, đồng thời vỏ bánh có thể ngay lập tức tan nhanh trong miệng.Có hai loại chính là bánh Crepes ngọt hoặc galettes mặn.",
+      "id": 4,
+      "name": "Bánh Crepes",
+      "thumbnail": "images/products/crepes-main.jpg"
+    },
+    {
+      "descr": "Pancake là một loại bánh phẳng, mỏng và tròn được làm từ nguyên liệu cơ bản bao gồm bột mì, trứng, sữa và bơ. Người ta thường cho một ít bơ hoặc dầu ăn phết lên chảo rồi mới cho bột bánh vào làm chín. Bánh pancake thường được sử dụng như một món ăn sáng và thưởng thức cùng với trà, cà phê hay sữa nóng. Ngoài ra pancake mặn thì được dùng ăn kèm với xúc xích, thịt hun khói",
+      "id": 5,
+      "name": "Bánh Pancake",
+      "thumbnail": "images/products/pancake-main.png"
+    }
+  ],
+  "products": [
+    null,
+    {
+      "cateId": 1,
+      "descr": "Hãy làm bừng sáng một ngày của bạn với những chiếc bánh Macarons bạc hà thơm ngon này được trang trí thêm với ít cùi vỏ chanh thái nhỏ. Đây là loại nhân tuyệt vời, tan chảy trong miệng với vị ngọt, chua và cay nhẹ. Tôi cá rằng bạn từng thử vị bánh này tại Rinhy Pastry rồi sẽ cảm nhận được hương vị tươi mát thần thánh và một chút ngậy ngậy trong miệng của bạn, phải không? Được rồi, vậy hãy bắt tay tiếp tục tập trung vào công việc sau khi thưởng thức những chiếc bánh macaron bạc hà đẹp mắt, đầy năng lượng này nào.",
+      "detail": "Nguyên liệu: đường, lòng trắng trứng, bột hạnh nhân, màu tự nhiên từ rau củ, màu thực phẩm, một số loại bột như: Bột trà xanh, bột cacao, bột quế,... chiết xuất của các loại hoa quả, cà phê... Bánh Macaron có nguồn gốc ở châu Âu từ thời trung cổ. Nhiều thông tin cho rằng bánh được sáng tạo ra bởi hai chị em nữ tu tại vùng Lorraine của Pháp. Bánh Macaron ngày nay có hình dáng tương tự như bánh Hamburger. Tuy nhiên bánh Macaron lại có kích thước nhỏ hơn và đa dạng màu sắc đa dạng.",
+      "id": 1,
+      "name": "Macaron bạc hà",
+      "price": 27000,
+      "quantity": 10,
+      "rating": 5,
+      "thumbnail": "images/products/macaron-bac-ha.png"
+    },
+    {
+      "cateId": 1,
+      "descr": "Hãy làm bừng sáng một ngày của bạn với những chiếc bánh Macarons bạc hà thơm ngon này được trang trí thêm với ít cùi vỏ chanh thái nhỏ. Đây là loại nhân tuyệt vời, tan chảy trong miệng với vị ngọt, chua và cay nhẹ. Tôi cá rằng bạn từng thử vị bánh này tại Rinhy Pastry rồi sẽ cảm nhận được hương vị tươi mát thần thánh và một chút ngậy ngậy trong miệng của bạn, phải không? Được rồi, vậy hãy bắt tay tiếp tục tập trung vào công việc sau khi thưởng thức những chiếc bánh macaron bạc hà đẹp mắt, đầy năng lượng này nào.",
+      "detail": "Nguyên liệu: đường, lòng trắng trứng, bột hạnh nhân, màu tự nhiên từ rau củ, màu thực phẩm, một số loại bột như: Bột trà xanh, bột cacao, bột quế,... chiết xuất của các loại hoa quả, cà phê... Bánh Macaron có nguồn gốc ở châu Âu từ thời trung cổ. Nhiều thông tin cho rằng bánh được sáng tạo ra bởi hai chị em nữ tu tại vùng Lorraine của Pháp. Bánh Macaron ngày nay có hình dáng tương tự như bánh Hamburger. Tuy nhiên bánh Macaron lại có kích thước nhỏ hơn và đa dạng màu sắc đa dạng.",
+      "id": 2,
+      "name": "Macaron Dừa",
+      "price": 30000,
+      "quantity": 10,
+      "rating": 5,
+      "thumbnail": "images/products/macaron-dua.png"
+    },
+    {
+      "cateId": 1,
+      "descr": "Hãy làm bừng sáng một ngày của bạn với những chiếc bánh Macarons bạc hà thơm ngon này được trang trí thêm với ít cùi vỏ chanh thái nhỏ. Đây là loại nhân tuyệt vời, tan chảy trong miệng với vị ngọt, chua và cay nhẹ. Tôi cá rằng bạn từng thử vị bánh này tại Rinhy Pastry rồi sẽ cảm nhận được hương vị tươi mát thần thánh và một chút ngậy ngậy trong miệng của bạn, phải không? Được rồi, vậy hãy bắt tay tiếp tục tập trung vào công việc sau khi thưởng thức những chiếc bánh macaron bạc hà đẹp mắt, đầy năng lượng này nào.",
+      "detail": "Nguyên liệu: đường, lòng trắng trứng, bột hạnh nhân, màu tự nhiên từ rau củ, màu thực phẩm, một số loại bột như: Bột trà xanh, bột cacao, bột quế,... chiết xuất của các loại hoa quả, cà phê... Bánh Macaron có nguồn gốc ở châu Âu từ thời trung cổ. Nhiều thông tin cho rằng bánh được sáng tạo ra bởi hai chị em nữ tu tại vùng Lorraine của Pháp. Bánh Macaron ngày nay có hình dáng tương tự như bánh Hamburger. Tuy nhiên bánh Macaron lại có kích thước nhỏ hơn và đa dạng màu sắc đa dạng.",
+      "id": 3,
+      "name": "Macaron Matcha",
+      "price": 30000,
+      "quantity": 7,
+      "rating": 5,
+      "thumbnail": "images/products/macaron-matcha.png"
+    }
+  ],
+  "users": [
+    null,
+    {
+      "address": "Đường 10, Phường 9, Gò Vấp, Thành phố Hồ Chí Minh, Vietnam",
+      "id": 1,
+      "name": "Hải Đăng",
+      "password": 123,
+      "phone": 123456789,
+      "role": 0
+    },
+    {
+      "address": "480 Bình Quới, Phường 28, Bình Thạnh, Thành phố Hồ Chí Minh, Vietnam",
+      "id": 2,
+      "name": "Huy Hoàng",
+      "password": 123,
+      "phone": 123456789,
+      "role": 0
+    },
+    {
+      "address": "192 Phạm Đức Sơn, Phường 16, Quận 8, Thành phố Hồ Chí Minh, Vietnam",
+      "id": 3,
+      "name": "Thiên Ân",
+      "password": 123,
+      "phone": 123456789,
+      "role": 0
+    }
+  ]
+}

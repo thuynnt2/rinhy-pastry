@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+.app menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(62, 127, 174, 0.5);
+}
+.app menu .container {
+  padding: 40px;
+  text-align: center;
+}
+.app menu .container .logo img {
+  width: 220px;
+}
+.app menu .container ul {
+  font-family: "Quicksand", sans-serif;
+}
+.app menu .container ul p:hover,
+.app menu .container ul a:hover {
+  color: rgb(64, 67, 67);
+}
+.app .header-admin {
+  font-family: Cambria, serif;
+}
+.app .header-admin .search i {
+  background-color: rgba(62, 127, 174, 0.5);
+  color: #fff;
+}
+.app .header-admin .user {
+  box-shadow: 0px 0px 20px rgba(115, 149, 174, 0.5);
+}
+.app .header-admin .user hr {
+  border-color: rgba(62, 127, 174, 0.5);
+}
+.app .header-admin .header__title {
+  font-family: Cambria, serif;
+  color: rgb(115, 149, 174);
+}
+.app .header-admin .header__title hr {
+  border-color: rgb(115, 149, 174);
+}
+.app .admin-content {
+  width: 1220px;
+  font-family: "Quicksand", sans-serif;
+}
+.app .admin-content .header__title {
+  font-family: Cambria, serif;
+  color: rgb(115, 149, 174);
+}
+.app .admin-content .header__title hr {
+  border-color: rgb(115, 149, 174);
+}
+.app .admin-content .add {
+  background-color: rgba(115, 149, 174, 0.5);
+}
+.app .admin-content button {
+  background-color: rgba(62, 127, 174, 0.7);
+}
+.app .admin-content button:hover {
+  background-color: rgb(62, 127, 174);
+}
+
+.authentication {
+  font-family: "Quicksand", sans-serif;
+}
+.authentication h2 {
+  color: rgb(62, 127, 174);
+}
+.authentication form {
+  box-shadow: 0px 0px 20px rgba(115, 149, 174, 0.15);
+}
+.authentication input:focus-visible {
+  border-color: rgb(115, 149, 174);
+}
+.authentication button {
+  background-color: rgba(62, 127, 174, 0.7);
+}
+.authentication button:hover {
+  background-color: rgb(62, 127, 174);
+}
+
+/*# sourceMappingURL=admin.css.map */

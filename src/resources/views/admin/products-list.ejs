@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app flex justify-between">
+
+        <div>
+            <%- include('../patrials/menu-admin.ejs') %>
+        </div>
+
+        <div class="admin-content px-14">
+            <%- include('../patrials/header-admin.ejs') %>
+
+                <div class="header__title my-4">
+                    <span class="font-semibold text-2xl">Sản phẩm</span>
+                    <hr class="mb-2">
+                </div>
+                <div class="container flex">
+                    <div class="w-1/4 pr-4">
+                        <div class="border rounded-md px-6 py-4 mb-4">
+                            <h3 class="font-semibold text-xl">Danh mục</h3>
+                            <ul>
+                                <li class=" my-2 before:content-['-'] before:mr-2 before:text-slate-700">
+                                    Bánh Macaron
+                                </li>
+                                <li class=" my-2 before:content-['-'] before:mr-2 before:text-slate-700">
+                                    Bánh Tiramisu
+                                </li>
+                                <li class=" my-2 before:content-['-'] before:mr-2 before:text-slate-700">
+                                    Bánh Donut
+                                </li>
+                                <li class=" my-2 before:content-['-'] before:mr-2 before:text-slate-700">
+                                    Bánh Crepes
+                                </li>
+                                <li class=" my-2 before:content-['-'] before:mr-2 before:text-slate-700">
+                                    Bánh Pancake
+                                </li>
+                                <li class=" my-2 before:content-['-'] before:mr-2 before:text-slate-700">
+                                    Tất cả
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border rounded-md px-6 py-4">
+                            <h3 class="font-semibold text-xl">Xếp hạng</h3>
+                            <ul class="text-amber-400">
+                                <li class=" my-2 flex">
+                                    <input class="mr-2" type="checkbox" name="" id="">
+                                    <div>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                    </div>
+                                </li>
+                                <li class=" my-2 flex">
+                                    <input class="mr-2" type="checkbox" name="" id="">
+                                    <div>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                    </div>
+                                </li>
+                                <li class=" my-2 flex">
+                                    <input class="mr-2" type="checkbox" name="" id="">
+                                    <div>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                    </div>
+                                </li>
+                                <li class=" my-2 flex">
+                                    <input class="mr-2" type="checkbox" name="" id="">
+                                    <div>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                    </div>
+                                </li>
+                                <li class=" my-2 flex">
+                                    <input class="mr-2" type="checkbox" name="" id="">
+                                    <div>
+                                        <i class='bx bxs-star text-xl mr-1'></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-3/4 border rounded-md px-5">
+                        <% for(let i = 0; i <= 10; i++) { %> 
+                        <div class="main flex my-7">
+                            <div class="thumbnail">
+                                <img class="w-30 overflow-hidden rounded-md" src="/images/products/crepes-main.jpg"
+                                    alt="">
+                            </div>
+                            <div class="content w-full px-5 flex flex-col justify-evenly">
+                                <h6 class="title text-lg font-medium capitalize">
+                                    Bánh Macaron chanh bạc hà
+                                </h6>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <span class="block text-[13px] text-neutral-400">Ngày tạo</span>
+                                        <span class="font-medium">10-11-2022</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-[13px] text-neutral-400">Cập nhật</span>
+                                        <span class="font-medium">10-11-2022</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-[13px] text-neutral-400">Giá</span>
+                                        <span class="font-medium">20.000 vnd</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-[13px] text-neutral-400">Xếp hạng</span>
+                                        <div class="font-bold">
+                                            <i class='bx bxs-star text-amber-400'></i>
+                                            <span>4.5</span>
+                                            <span class="text-gray-500">(140)</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-info-circle text-[22px] text-cyan-600'></i>
+                                        <i class='bx bxs-edit-alt text-[22px] text-emerald-600'></i>
+                                        <i class='bx bxs-x-circle text-[22px] text-rose-600'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    <script src="/javascript/admin.js"></script>
+
+</body>
+
+</html>

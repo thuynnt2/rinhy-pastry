@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+.app .header {
+  background-color: rgba(115, 149, 174, 0.8);
+  color: #fff;
+  font-family: Cambria, serif;
+  font-size: 1.2rem;
+}
+.app .header__container {
+  width: 1370px;
+}
+.app .header__container hr {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.app .header__logo {
+  width: 200px;
+}
+.app .poster__background {
+  height: 49.375rem;
+  background-image: url(/images/backgrounds/bg-poster.png);
+  background-size: auto 100%;
+  opacity: 0.5;
+}
+.app .home__title {
+  width: 1370px;
+  font-family: Cambria, serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 auto;
+  color: rgb(62, 127, 174);
+  text-transform: capitalize;
+}
+.app .home__title hr {
+  border: none;
+  border-bottom: 2px solid rgb(62, 127, 174);
+  width: 38%;
+}
+.app .home__title span {
+  margin: 0 2.4rem;
+}
+.app .home__products {
+  width: 1370px;
+  margin: 0 auto;
+}
+.app .home__products img {
+  width: 250px;
+}
+.app .home__products .content---title {
+  font-family: Cambria, serif;
+}
+.app .home__products .content--price {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+.app .home__category .cate__bg {
+  height: 24.5rem;
+  background-image: url(/images/backgrounds/bg-header.png);
+  background-size: auto 100%;
+  opacity: 0.2;
+}
+.app .home__category .cate__container {
+  width: 65.375rem;
+}
+.app .home__category .cate__container .cate--content .thumbnail {
+  width: 21rem;
+}
+.app .home__category .cate__container .cate--content .content__hover {
+  display: none;
+  width: 21rem;
+  height: 21rem;
+  background-color: rgba(115, 149, 174, 0.8);
+}
+.app .home__category .cate__container .cate--content .content__hover span {
+  font-family: Cambria, serif;
+  font-weight: bold;
+  color: #fff;
+}
+.app .home__category .cate__container .cate--content .thumbnail-end img {
+  width: 10.5rem;
+}
+.app .home__category .cate__container .cate--content:hover .content__hover {
+  display: flex;
+}
+.app .home__action {
+  font-family: Cambria, serif;
+}
+.app .home__action i {
+  color: rgb(115, 149, 174);
+}
+.app .shop__title {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/images/backgrounds/bg-header.png);
+  min-height: 390px;
+  font-family: Cambria, serif;
+  color: rgb(62, 127, 174);
+}
+.app .shop__title .carte__active {
+  color: #000;
+}
+.app .shop__main {
+  width: 1260px;
+}
+.app .shop__main--left {
+  color: rgb(115, 149, 174);
+}
+.app .shop__main--left .thumbnail {
+  width: auto;
+  position: relative;
+}
+.app .shop__main--left .thumbnail .img-under {
+  opacity: 0.3;
+  margin-top: 10px;
+}
+.app .shop__main--left .thumbnail .img-above {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}
+.app .shop__main--left .search {
+  width: auto;
+  position: relative;
+  color: Cambria, serif;
+}
+.app .shop__main--left .search input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(115, 149, 174);
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px 20px;
+  box-shadow: 1px 1px 10px rgba(115, 149, 174, 0.5);
+}
+.app .shop__main--left .search i {
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  color: rgb(115, 149, 174);
+}
+.app .shop__main--left ul {
+  font-family: Cambria, serif;
+}
+.app .shop__main--left ul a {
+  color: #000;
+}
+.app .shop__main--right .right-descr-title {
+  min-height: 360px;
+}
+.app .shop__main--right .right-descr-title .title {
+  font-family: Cambria, serif;
+}
+.app .shop__main--right .right-descr-title .descrt {
+  font-family: "Quicksand", sans-serif;
+}
+.app .shop__main--right .right__main {
+  font-family: Cambria, serif;
+}
+.app .shop__main--right .right__main ul {
+  color: rgb(64, 67, 67);
+}
+.app .shop__main--right .right__main ul .active {
+  border-bottom: 2px solid rgb(115, 149, 174);
+  color: rgb(115, 149, 174);
+}
+.app .shop__main--right .right__main hr {
+  border: none;
+  border-bottom: 1px solid rgb(115, 149, 174);
+}
+.app .shop__main--right .right__main .pro-name {
+  font-family: Cambria, serif;
+}
+.app .shop__main--right .right__main .price {
+  font-family: "Quicksand", sans-serif;
+}
+.app .shop__category {
+  width: 1260px;
+}
+.app .shop__category span {
+  font-family: Cambria, serif;
+}
+.app .shop__category p {
+  font-family: "Quicksand", sans-serif;
+}
+.app .shop__detail--main {
+  width: 1260px;
+}
+.app .shop__detail--main .detail-top {
+  font-family: "Quicksand", sans-serif;
+}
+.app .shop__detail--main .detail-top .product__name {
+  font-family: Cambria, serif;
+}
+.app .shop__detail--main .detail-top hr {
+  border-bottom: 1px solid rgb(115, 149, 174);
+  width: 70%;
+}
+.app .shop__detail--main .detail-top .counter .container {
+  border: 1px solid rgb(64, 67, 67);
+  border-radius: 2px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .shop__detail--main .detail-top .counter .container .down,
+.app .shop__detail--main .detail-top .counter .container .up {
+  display: block;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.app .shop__detail--main .detail-top .counter .container input {
+  width: 50px;
+  border-left: 1px solid rgb(64, 67, 67);
+  border-right: 1px solid rgb(64, 67, 67);
+  background-color: transparent;
+  text-align: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+.app .shop__detail--main .detail-top button {
+  padding: 10px 25px;
+  font-family: "Quicksand", sans-serif;
+  background-color: rgba(115, 149, 174, 0.8);
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px rgba(115, 149, 174, 0.5);
+}
+.app .shop__detail--more {
+  width: 1260px;
+  font-family: Cambria, serif;
+}
+.app .shop__detail--more ul {
+  color: rgb(64, 67, 67);
+}
+.app .shop__detail--more ul .active {
+  border-bottom: 2px solid rgb(115, 149, 174);
+  color: rgb(115, 149, 174);
+}
+.app .shop__detail--more hr {
+  border: none;
+  border-bottom: 1px solid rgb(115, 149, 174);
+}
+.app .shop__detail--more .detail--main {
+  font-family: "Quicksand", sans-serif;
+}
+.app .shop__detail--more .order {
+  padding: 10px 25px;
+  font-family: "Quicksand", sans-serif;
+  background-color: rgba(115, 149, 174, 0.8);
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px rgba(115, 149, 174, 0.5);
+  font-size: 20px;
+}
+.app .shop__detail--title {
+  font-family: Cambria, serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 auto;
+  color: rgb(62, 127, 174);
+  text-transform: capitalize;
+  width: 1260px;
+}
+.app .shop__detail--title hr {
+  border: none;
+  border-bottom: 2px solid rgb(62, 127, 174);
+  width: 38%;
+}
+.app .shop__detail--title span {
+  margin: 0 2.4rem;
+}
+.app .shop__detail--title hr {
+  width: 36%;
+}
+.app .shop__product--more {
+  width: 1260px;
+}
+.app .shop__product--more .pro-name {
+  font-family: Cambria, serif;
+}
+.app .shop__product--more .price {
+  font-family: "Quicksand", sans-serif;
+}
+.app .cart__main {
+  width: 1348px;
+  font-family: Cambria, serif;
+  color: rgb(64, 67, 67);
+}
+.app .cart__main .product {
+  background-color: rgba(62, 127, 174, 0.1);
+}
+.app .cart__main .product .price {
+  font-family: "Quicksand", sans-serif;
+}
+.app .cart__main .product .counter .container {
+  border: 1px solid rgb(64, 67, 67);
+  border-radius: 2px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .cart__main .product .counter .container .down,
+.app .cart__main .product .counter .container .up {
+  display: block;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.app .cart__main .product .counter .container input {
+  width: 50px;
+  border-left: 1px solid rgb(64, 67, 67);
+  border-right: 1px solid rgb(64, 67, 67);
+  background-color: transparent;
+  text-align: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+.app .cart__main .cart__total {
+  padding-left: 150px;
+  padding-right: 235px;
+}
+.app .cart__main .cart__total .price {
+  font-family: "Quicksand", sans-serif;
+}
+.app .cart__main .order {
+  padding: 10px 25px;
+  font-family: "Quicksand", sans-serif;
+  background-color: rgba(115, 149, 174, 0.8);
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px rgba(115, 149, 174, 0.5);
+  font-size: 20px;
+}
+.app footer {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/images/backgrounds/bg-poster.png);
+  background-position: center;
+  font-family: Cambria, serif;
+  box-shadow: 0px -2px 50px rgba(115, 149, 174, 0.5);
+}
+.app footer .footer {
+  width: 1260px;
+  margin: 0 auto;
+}/*# sourceMappingURL=app.css.map */

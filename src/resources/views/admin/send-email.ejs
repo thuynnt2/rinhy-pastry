@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app flex justify-between">
+
+        <div>
+            <%- include('../patrials/menu-admin.ejs') %>
+        </div>
+
+        <div class="admin-content px-14">
+            <%- include('../patrials/header-admin.ejs') %>
+
+                <div class="header__title my-4">
+                    <span class="font-semibold text-2xl">Gửi email</span>
+                    <hr class="mb-2">
+                </div>
+                <div class="container">
+                    <form class="w-1/2 mx-auto border p-5 rounded-md flex flex-col justify-center">
+
+                        <div>
+                            <p>Email</p>
+                            <input type="text" id="email" class="w-full border rounded-sm my-2 px-3 py-1 outline-none">
+                        </div>
+                        <div>
+                            <p>Tiêu đề</p>
+                            <input type="text" id="title" class="w-full border rounded-sm my-2 px-3 py-1 outline-none">
+                        </div>
+                        <div>
+                            <p>Nội dung</p>
+                            <textarea id="content" class="w-full border rounded-sm my-2 px-3 py-1 outline-none"
+                                rows="5"></textarea>
+                        </div>
+                        <button id="sendMailBtn" type="button" class="border rounded-sm px-3 py-2 my-2 text-white">
+                            Gửi Email
+                        </button>
+                    </form>
+                </div>
+        </div>
+
+    </div>
+
+    <script src="/javascript/admin.js"></script>
+
+    <script>
+        let sendEmail = () => {
+            let data = {};
+            data['email'] = document.getElementById('email').value;
+            data['title'] = document.getElementById('title').value;
+            data['content'] = document.getElementById('content').value;
+
+            fetch(`http://localhost:3000/api/users/sendMail`, {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: { "Content-type": "application/json; charset=UTF-8" }
+            })
+                .then(res => res.json())
+                .then(data => {
+                    alert('Đã gửi email thành công!')
+                });
+        }
+
+        let sendMailBtn = document.getElementById('sendMailBtn');
+        sendMailBtn.addEventListener('click', sendEmail);
+    </script>
+
+
+</body>
+
+</html>

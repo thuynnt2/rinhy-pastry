@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app flex justify-between">
+
+        <div>
+            <%- include('../patrials/menu-admin.ejs') %>
+        </div>
+
+        <div class="admin-content px-14">
+            <%- include('../patrials/header-admin.ejs') %>
+
+                <div class="header__title my-4">
+                    <span class="font-semibold text-2xl">Danh mục sản phẩm</span>
+                    <hr class="mb-2">
+                </div>
+                <div class="container">
+                    <table class="border-collapse text-left text-sm w-full">
+                        <thead>
+                            <tr>
+                                <th class="uppercase border-b p-3">#id</th>
+                                <th class="uppercase border-b p-3">Tên KH</th>
+                                <th class="uppercase border-b p-3">Địa chỉ</th>
+                                <th class="uppercase border-b p-3">Sđt</th>
+                                <th class="uppercase border-b p-3 text-right pr-5">Tổng tiền</th>
+                                <th class="uppercase border-b p-3">Trạng thái</th>
+                                <th class="uppercase border-b p-3"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i = 0; i<=12; i++) { %>
+
+                                <tr>
+                                    <td class="border-b p-3 font-semibold">#Order-001</td>
+                                    <td class="border-b p-3">Hoài Thu</td>
+                                    <td class="border-b p-3">Tăng Nhơn Phú A, TP.Thủ Đức, TP. Hồ Chí Minh</td>
+                                    <td class="border-b p-3">0812345678</td>
+                                    <td class="border-b p-3 text-right pr-5">399.000 vnd</td>
+                                    <td class="border-b p-3 text-yellow-500">Đang giao hàng</td>
+                                    <td class="border-b p-3">
+                                        <i class='bx bx-info-circle text-base text-cyan-600'></i>
+                                        <i class='bx bxs-edit-alt text-base text-emerald-600'></i>
+                                        <i class='bx bxs-x-circle text-base text-rose-600'></i>
+                                    </td>
+                                </tr>
+
+                            <% } %> 
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+    </div>
+
+    <script src="/javascript/admin.js"></script>
+
+</body>
+
+</html>

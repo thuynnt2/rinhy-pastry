@@ -1,0 +1,70 @@
+<header class="header fixed w-full z-10">
+
+    <div class="header__container flex justify-between items-center mx-auto py-4 relative">
+        <hr class="absolute w-[34rem] top-4 ">
+        <ul class="flex justify-evenly basis-2/5">
+            <li>
+                <a class="capitalize" href="/">Trang chủ</a>
+            </li>
+            <li>
+                <a class="capitalize" href="/shop/1">Cửa hàng</a>
+            </li>
+            <li>
+                <a class="capitalize" href="">Giới thiệu</a>
+            </li>
+        </ul>
+        <hr class="absolute w-[34rem] bottom-4 ">
+        <div>
+            <img class="header__logo" src="/images/logos/logo-no-left-white2.png" alt="">
+        </div>
+        <hr class="absolute w-[34rem] top-4 right-0 ">
+        <ul class="flex justify-evenly basis-2/5">
+            <li>
+                <a class="capitalize" href="">Mã giảm giá</a>
+            </li>
+            <li class="">
+                <ul class="flex justify-between items-center">
+                    <li class="relative pl-5 w-2/3 ">
+                        
+                        <form>
+                            <button id="searchBtn" type="button" class=" absolute bottom-0 left-0">
+                                <i class='bx bx-search bx-sm'></i>
+                            </button>
+                            <input id="search" class="bg-transparent border-b text-right placeholder-[#d9ebed] outline-none w-full text-lg"
+                                type="text" placeholder="Tìm kiếm">
+                        </form>
+                    </li>
+                    <li>
+                        <a class="capitalize pt-1" href="/cart">
+                            <i class='bx bx-cart-alt bx-sm relative top-1'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="capitalize pt-1" href="/register">
+                            <i class='bx bx-user bx-sm relative top-1'></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="absolute w-[34rem] bottom-4 right-0 ">
+    </div>
+
+    <script>
+        let searchProduct = () => {
+            let query = document.getElementById('search').value;
+            console.log(query);
+
+            fetch(`http://localhost:3000/api/products/search/${query}`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    window.location = `http://localhost:3000/shop/search/${query}`;
+                })
+        }
+
+        let searchBtn = document.getElementById('searchBtn');
+        searchBtn.addEventListener("click", searchProduct);
+    </script>
+
+</header>

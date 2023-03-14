@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app flex justify-between">
+
+        <div>
+            <%- include('../patrials/menu-admin.ejs') %>
+        </div>
+
+        <div class="admin-content px-14">
+            <%- include('../patrials/header-admin.ejs') %>
+
+                <div class="header__title my-4">
+                    <span class="font-semibold text-2xl">Thêm sản phẩm</span>
+                    <hr class="mb-2">
+                </div>
+                <div class="container pb-3">
+
+                    <form action="">
+                        <div class="mx-auto flex bg-slate-100 p-5 pb-0">
+                            <div class="w-1/2 p-3">
+
+                                <div class="m-2">
+                                    <label for="name" class="font-semibold">Tên sản phẩm</label>
+                                    <input id="name" type="text" class="w-full p-2 outline-none my-3 rounded">
+                                </div>
+                                <div class="m-2">
+                                    <label for="categories" class="font-semibold">Loại sản phẩm</label>
+                                    <select id="categories" class="w-full p-2 outline-none my-3 rounded">
+                                        <option selected>Chọn loại sản phẩm</option>
+                                        <option value="1">Bánh Macaron</option>
+                                        <option value="2">Bánh Tiramisu</option>
+                                        <option value="3">Bánh Donut</option>
+                                        <option value="4">Bánh Crepes</option>
+                                        <option value="5">Bánh Pancake</option>
+                                    </select>
+                                </div>
+                                <div class="m-2">
+                                    <label for="detail" class="font-semibold">Chi tiết sản phẩm</label>
+                                    <textarea cols="30" rows="5"
+                                        class="w-full p-2 outline-none my-3 rounded"></textarea>
+                                </div>
+                                <div class="m-2">
+                                    <label for="descr" class="font-semibold">Mô tả sản phẩm</label>
+                                    <textarea cols="30" rows="5"
+                                        class="w-full p-2 outline-none my-3 rounded"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="w-1/2 p-3">
+                                <div class="flex">
+                                    <div class="m-2">
+                                        <label for="price" class="font-semibold">Giá sản phẩm</label>
+                                        <input id="price" type="number" class="w-full p-2 outline-none my-3 rounded">
+                                    </div>
+                                    <div class="m-2">
+                                        <label for="quantity" class="font-semibold">Số lượng sản phẩm</label>
+                                        <input id="quantity" type="number" class="w-full p-2 outline-none my-3 rounded">
+                                    </div>
+                                </div>
+
+                                <div class="m-2">
+                                    <label for="thumbnail" class="font-semibold pl-2">Hình ảnh sản phẩm</label>
+                                    <input id="thumbnail" type="file" class="w-full p-2 outline-none my-3 rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+        </div>
+
+    </div>
+
+    <script src="/javascript/admin.js"></script>
+    
+</body>
+
+</html>

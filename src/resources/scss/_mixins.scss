@@ -1,0 +1,84 @@
+@mixin title {
+  font-family: $default;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 auto;
+  color: $title-color;
+  text-transform: capitalize;
+
+  hr {
+    border: none;
+    border-bottom: 2px solid $title-color;
+    width: 38%;
+  }
+
+  span {
+    margin: 0 2.4rem;
+  }
+}
+
+@mixin button {
+  padding: 10px 25px;
+  font-family: $title;
+  background-color: $base-color;
+  font-size: 15px;
+  color: $white-text;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px $shadow-color;
+}
+
+@mixin product {
+  .pro-name {
+    font-family: $default;
+  }
+
+  .price {
+    font-family: $title;
+  }
+}
+
+@mixin counter {
+  .container {
+    border: 1px solid $brrow-text;
+    border-radius: 2px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .down,
+    .up {
+      display: block;
+      width: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    input {
+      width: 50px;
+      border-left: 1px solid $brrow-text;
+      border-right: 1px solid $brrow-text;
+      background-color: transparent;
+      text-align: center;
+      appearance: none;
+      outline: none;
+      font-family: $title;
+      font-size: 20px;
+    }
+  }
+}
+
+@mixin title-admin {
+  font-family: $default;
+  color: $default-color;
+
+  hr {
+    border-color: $default-color;
+  }
+}

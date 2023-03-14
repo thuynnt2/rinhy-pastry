@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app flex justify-between">
+
+        <div>
+            <%- include('../patrials/menu-admin.ejs') %>
+        </div>
+
+        <div class="admin-content px-14">
+            <%- include('../patrials/header-admin.ejs') %>
+
+                <div class="header__title my-4">
+                    <span class="font-semibold text-2xl">Danh mục sản phẩm</span>
+                    <hr class="mb-2">
+                </div>
+                <div class="container">
+                    <table class="border-collapse text-left">
+                        <thead>
+                            <tr>
+                                <th class="border-b p-4 uppercase text-sm">#</th>
+                                <th class="border-b p-4 uppercase text-sm">Hình ảnh</th>
+                                <th class="border-b p-4 uppercase text-sm">Tên</th>
+                                <th class="border-b p-4 px-6 uppercase text-sm">Mô tả</th>
+                                <th class="border-b p-4 uppercase text-sm"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-b p-4">1</td>
+                                <td class="border-b p-4">
+                                    <img class="w-auto" src="/images/products/macaron-main.png" alt="">
+                                </td>
+                                <td class="border-b p-4 w-[150px]">Bánh Macaron</td>
+                                <td class="border-b p-4 px-6">
+                                    Bánh Macaron là loại bánh ngọt được làm từ nguyên liệu chính là trứng, đường cát,
+                                    bột hạnh nhân,
+                                    và một ít màu thực
+                                    phẩm. Phủ bên trong lớp bánh giòn tan là lớp nhân được làm từ kem bơ hoặc mứt. Là
+                                    chiếc bánh
+                                    được mệnh danh là nàng tiểu
+                                    thư bánh đỏng đảnh của nước Pháp bởi vẻ kiêu kỳ, nhìn thì đơn giản nhưng để làm ra
+                                    chiếc bánh
+                                    không hề đơn giản chút
+                                    nào.
+                                </td>
+                                <td class="border-b p-4 w-[100px]">
+                                    <div class="flex justify-between">
+                                        <a href="">
+                                            <i class='bx bx-edit-alt bx-sm text-teal-500'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bxs-x-square bx-sm text-rose-500'></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-b p-4">2</td>
+                                <td class="border-b p-4">
+                                    <img class="w-auto" src="/images/products/tiramisu-main.jpg" alt="">
+                                </td>
+                                <td class="border-b p-4 w-[150px]">Bánh Tiramisu</td>
+                                <td class="border-b p-4 px-6">
+                                    Tiramisu là một loại bánh ngọt tráng miệng có hương vị café rất nổi tiếng tại Ý và
+                                    nhiều quốc
+                                    gia trên thế giới. Món
+                                    bánh này bao gồm các lớp bánh quy Savoiardi được nhúng vào café, sau đó xếp xen kẽ
+                                    với hỗn hợp
+                                    trứng, đường, phô mai
+                                    mascarpone được đánh bông lên, trên mặt bánh người ta sẽ rắc thêm chút bột cacao vô
+                                    cùng hấp
+                                    dẫn.
+                                </td>
+                                <td class="border-b p-4 w-[100px]">
+                                    <div class="flex justify-between">
+                                        <a href="">
+                                            <i class='bx bx-edit-alt bx-sm text-teal-500'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bxs-x-square bx-sm text-rose-500'></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-b p-4">3</td>
+                                <td class="border-b p-4">
+                                    <img class="w-auto" src="/images/products/donut-main.jpg" alt="">
+                                </td>
+                                <td class="border-b p-4 w-[150px]">Bánh Donut</td>
+                                <td class="border-b p-4 px-6">
+                                    Bánh Donut - bánh vòng là một loại bánh ngọt rán hoặc nướng để ăn tráng miệng hay ăn
+                                    vặt. Đây là
+                                    loại bánh rất nổi tiếng
+                                    và phổ biến ở nhiều nước phương Tây, bánh thường có dạng hình vòng nhồi nhân bên
+                                    trong hoặc
+                                    không nhồi nhân bên trong.
+                                    Ngoài ra, bánh Donut cũng có thể được tạo thành hình dạng khác như hình tam giác,
+                                    hình cầu dẹt,
+                                    quả bóng hoặc hình xoắn.
+                                </td>
+                                <td class="border-b p-4 w-[100px]">
+                                    <div class="flex justify-between">
+                                        <a href="">
+                                            <i class='bx bx-edit-alt bx-sm text-teal-500'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bxs-x-square bx-sm text-rose-500'></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-b p-4">4</td>
+                                <td class="border-b p-4">
+                                    <img class="w-auto" src="/images/products/crepes-main.jpg" alt="">
+                                </td>
+                                <td class="border-b p-4 w-[150px]">Bánh Crepes</td>
+                                <td class="border-b p-4 px-6">
+                                    Có xuất xứ từ châu Âu, bánh Crepe đang dần trở thành món ăn vặt yêu thích của giới
+                                    trẻ Việt Nam hiện
+                                    nay. Với vỏ bánh
+                                    mỏng, mềm cùng hương thơm nức mũi từ các nguyên liệu chế biến như: trứng, sữa,
+                                    đường,… mang đến vị
+                                    béo ngậy cho bánh
+                                    crepe, đồng thời vỏ bánh có thể ngay lập tức tan nhanh trong miệng.Có hai loại chính
+                                    là bánh Crepes
+                                    ngọt hoặc galettes
+                                    mặn.
+                                </td>
+                                <td class="border-b p-4 w-[100px]">
+                                    <div class="flex justify-between">
+                                        <a href="">
+                                            <i class='bx bx-edit-alt bx-sm text-teal-500'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bxs-x-square bx-sm text-rose-500'></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-b p-4">5</td>
+                                <td class="border-b p-4">
+                                    <img class="w-auto" src="/images/products/pancake-main.png" alt="">
+                                </td>
+                                <td class="border-b p-4 w-[150px]">Bánh Pancake</td>
+                                <td class="border-b p-4 px-6">
+                                    Pancake là một loại bánh phẳng, mỏng và tròn được làm từ nguyên liệu cơ bản bao gồm
+                                    bột mì, trứng,
+                                    sữa và bơ. Người ta
+                                    thường cho một ít bơ hoặc dầu ăn phết lên chảo rồi mới cho bột bánh vào làm chín.
+                                    Bánh pancake
+                                    thường được sử dụng như
+                                    một món ăn sáng và thưởng thức cùng với trà, cà phê hay sữa nóng. Ngoài ra pancake
+                                    mặn thì được dùng
+                                    ăn kèm với xúc
+                                    xích, thịt hun khói
+                                </td>
+                                <td class="border-b p-4 w-[100px]">
+                                    <div class="flex justify-between">
+                                        <a href="">
+                                            <i class='bx bx-edit-alt bx-sm text-teal-500'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bxs-x-square bx-sm text-rose-500'></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+    </div>
+
+    <script src="/javascript/admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <%- include('../patrials/header'); %>
+
+            <section class="shop__title flex justify-start items-center pt-18 px-32 text-2xl font-bold">
+                <a href="/">Trang chủ</a>
+                <span class="mx-2">/</span>
+                <a href="/shop">Cửa hàng</a>
+                <span class="mx-2">/</span>
+                <a href="/shop/<%= cateId %> " id="categoryName">Bánh Macaron</a>
+                <span class="mx-2">/</span>
+                <a href="" class="carte__active productName">Bánh Macaron chanh bạc hà</a>
+            </section>
+
+            <section class="shop__detail--main mx-auto flex my-20">
+                <div class="thumbnail flex w-[45%] justify-between">
+                    <img class="productThumbnail w-[450px] h-[450px] overflow-hidden" src="" alt="">
+                    <div class="images--more flex flex-col justify-between mr-6">
+                        <img class="productThumbnail w-20" src="" alt="">
+                        <img class="productThumbnail w-20" src="" alt="">
+                        <img class="productThumbnail w-20" src="" alt="">
+                        <img class="productThumbnail w-20" src="" alt="">
+                        <img class="productThumbnail w-20" src="" alt="">
+                    </div>
+                </div>
+                <div class="detail-top w-[55%] pl-10">
+                    <h4 class="product__name text-3xl productName">Bánh Macaron chanh bạc hà</h4>
+                    <hr>
+                    <ul class="product__star flex my-2">
+                        <li class="text-amber-200">
+                            <i class='bx bxs-star mr-1'></i>
+                        </li>
+                        <li class="text-amber-200">
+                            <i class='bx bxs-star mr-1'></i>
+                        </li>
+                        <li class="text-amber-200">
+                            <i class='bx bxs-star mr-1'></i>
+                        </li>
+                        <li class="text-amber-200">
+                            <i class='bx bxs-star mr-1'></i>
+                        </li>
+                        <li class="text-amber-200">
+                            <i class='bx bxs-star mr-1'></i>
+                        </li>
+                    </ul>
+                    <p class="product__detail my-6" id="productDescr"></p>
+                    <div class="product__price-stock flex items-center">
+                        <p class="price text-2xl font-bold" id="productPrice"></p>
+                        <p class="stock ml-7">
+                            <i class='bx bx-check'></i>
+                            <span id="quantity"></span> sản phẩm có sẵn
+                        </p>
+                    </div>
+                    <div class="flex my-5 items-center">
+                        <span>Số lượng: </span>
+                        <div class="counter ml-5">
+                            <div class="container flex justify-center">
+                                <span class="down">-</span>
+                                <input type="text" value="1">
+                                <span class="up">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button">Thêm vào giỏ hàng</button>
+                </div>
+            </section>
+
+            <div class="shop__detail--more mx-auto">
+                <ul class="title-top flex justify-evenly text-xl pr-5">
+                    <li class="pb-2 px-5 active">Thông tin chi tiết</li>
+                    <li class="pb-2 px-5 ">Đánh giá</li>
+                </ul>
+                <hr>
+                <div class="detail--main px-14 text-base">
+                    <div class="more-info">
+                        <ul class="list-disc">
+                            <li class="pt-5" id="productDetail"></li>
+                            <!-- <li class="pt-5">
+                                Những chiếc bánh Macarons chanh bạc hà thơm ngon này được trang trí thêm với ít cùi vỏ
+                                chanh thái nhỏ. Đây là loại nhân
+                                tuyệt vời, tan chảy trong miệng với vị ngọt, chua và cay nhẹ. Tôi cá rằng bạn từng thử
+                                vị bánh này tại Rinhy Pastry rồi
+                                sẽ cảm nhận được hương vị tươi mát thần thánh và một chút ngậy ngậy trong miệng của bạn.
+                            </li>
+                            <li class="pt-5">
+                                Thành phần cho 16 cái bánh:
+                                Lòng trắng trứng 150g, đường 150g, bột hạnh nhân 150g, màu gel xanh dương, lá bạc hà
+                                30g, nước 170g, nước chanh 10g (2
+                                muỗng cà phê), gelatin 7g (4,5 lá), socola trắng 215g, kem 35% 60g, vỏ chanh 4g (1 thìa
+                                cà phê), bơ 55g (2oz)
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full mx-auto mt-14 text-center">
+                    <button class="order" type="button">
+                        Đặt bánh theo yêu cầu
+                    </button>
+                </div>
+            </div>
+
+            <section class="shop__detail--title">
+                <hr>
+                <span>Sản phẩm tương tự</span>
+                <hr>
+            </section>
+
+            <section class="shop__product--more flex justify-between mx-auto " id="productByCategory">
+
+            </section>
+
+            <section class="shop__detail--title">
+                <hr>
+                <span>Các sản phẩm khác</span>
+                <hr>
+            </section>
+
+            <section class="shop__product--more flex justify-between mx-auto mb-18" id="productMore">
+                
+            </section>
+
+            <%- include ('../patrials/footer.ejs')%>
+
+    </div>
+
+
+    <script>
+        let card = (product, place) => {
+            document.getElementById(place).innerHTML += `
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/${product.cateId}/${product.id}">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden" src="/${product.thumbnail}" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                ${product.name}
+                            </h4>
+                            <p class="price">
+                                ${product.price.toLocaleString( "it-IT", { style: "currency", currency: "VND" } )}
+                            </p>
+                        </div>
+                    </a>
+                </div>  
+            `;
+        }
+
+        fetch(`http://localhost:3000/api/categories/${'<%= cateId %>'}`)
+            .then(res => res.json())
+            .then(category => {
+                document.getElementById('categoryName').innerHTML = category.name
+            })
+
+        fetch(`http://localhost:3000/api/products/${'<%= productId %>'}`)
+            .then(res => res.json())
+            .then(product => {
+                let productName = document.querySelectorAll('.productName');
+                productName.forEach(item => {
+                    item.innerHTML = product.name;
+                })
+                document.getElementById('quantity').innerHTML = product.quantity;
+                document.getElementById('productDescr').innerHTML = product.descr;
+                document.getElementById('productDetail').innerHTML = product.detail;
+                document.getElementById('productPrice').innerHTML = product.price.toLocaleString(
+                    "it-IT",
+                    { style: "currency", currency: "VND" }
+                );
+                let productThumbnail = document.querySelectorAll('.productThumbnail');
+                productThumbnail.forEach(item => item.src = `/${product.thumbnail}`)
+            })
+
+        fetch(`http://localhost:3000/api/products/category/<%= cateId %>`)
+            .then(res => res.json())
+            .then(products => {
+                for (let i = 0; i < 5; i++) {
+                    card(products[i], 'productByCategory')
+                }
+            })
+
+        fetch(`http://localhost:3000/api/products/hot/isHot`)
+            .then(res => res.json())
+            .then(products => {
+                for (let i = 0; i < 5; i++) {
+                    card(products[i], 'productMore')
+                }
+            })
+    </script>
+
+</body>
+
+</html>

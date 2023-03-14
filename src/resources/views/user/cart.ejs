@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <%- include('../patrials/header'); %>
+
+            <section class="shop__title flex justify-start items-center pt-18 px-32 text-2xl font-bold">
+                <a href="">Trang chủ</a>
+                <span class="mx-2">/</span>
+                <a href="" class="carte__active">Giỏ hàng</a>
+            </section>
+
+            <section class="cart__main mx-auto">
+                <ul class="container w-full text-left text-2xl my-10">
+                    <li class=" px-11">
+                        <ul class="flex justify-between">
+                            <li class="w-[44%] text-black">Sản phẩm</li>
+                            <li class="w-[14%] text-black">Đơn giá</li>
+                            <li class="w-[14%] text-black">Số lượng</li>
+                            <li class="w-[14%] text-black">Số tiền</li>
+                            <li class="w-[8%] text-black">Thao tác</li>
+                        </ul>
+                    </li>
+
+                    <% for(let i=0; i<5; i++){ %>
+                        <li class="product px-11 rounded-sm">
+                            <ul class="flex h-[150px] items-center justify-between mt-3 mb-5">
+                                <li class="flex items-center justify-start w-[44%]">
+                                    <img class="w-24 h-24 mr-4 rounded-md overflow-hidden"
+                                        src="https://i.pinimg.com/564x/bf/c3/92/bfc3920ddd9196a69502eeb7948bf05e.jpg"
+                                        alt="">
+                                    <a href="/shop/:slug" class="pro__name">Macaron chanh bạc hà</a>
+                                </li>
+                                <li class="price w-[14%] text-xl font-bold">15.000 vnd</li>
+                                <li class="w-[14%] counter">
+                                    <div class="container flex justify-center">
+                                        <span class="down">-</span>
+                                        <input type="text" value="1">
+                                        <span class="up">+</span>
+                                    </div>
+                                </li>
+                                <li class="price w-[14%] text-xl font-bold">
+                                    15.000 vnd
+                                </li>
+                                <li class="flex items-center w-[8%]">
+                                    <a class="mr-9" href="">
+                                        <i class='bx bxs-x-circle bx-sm text-rose-600'></i>
+                                    </a>
+                                    <a href="">
+                                        <i class='bx bxs-edit bx-sm text-emerald-600'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    <% } %>
+                </ul>
+                <ul class="cart__total text-xl">
+                    <li class="flex justify-between my-2">
+                        <span>Tổng tiền</span>
+                        <span class="price">60.000 vnd</span>
+                    </li>
+                    <li class="flex justify-between my-2">
+                        <span>Khuyến mãi</span>
+                        <span class="price"> 0 vnd</span>
+                    </li>
+                    <li class="flex justify-between my-2">
+                        <span>Phí vận chuyển</span>
+                        <span class="price"> 0 vnd</span>
+                    </li>
+                    <li class="flex justify-between my-2">
+                        <span>Tổng thanh toán</span>
+                        <span class="price">60.000 vnd</span>
+                    </li>
+                </ul>
+                <div class="w-full mx-auto mt-14 text-center">
+                    <button class="order" type="button">
+                        Đặt hàng
+                    </button>
+                </div>
+            </section>
+
+            <section class="shop__detail--title">
+                <hr>
+                <span>Các sản phẩm khác</span>
+                <hr>
+            </section>
+
+            <section class="shop__product--more flex justify-between mx-auto mb-18">
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/:slug">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden"
+                                src="https://i.pinimg.com/564x/bf/c3/92/bfc3920ddd9196a69502eeb7948bf05e.jpg" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                Macaron chanh bạc hà
+                            </h4>
+                            <p class="price">20.000 vnđ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/:slug">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden"
+                                src="https://i.pinimg.com/564x/bf/c3/92/bfc3920ddd9196a69502eeb7948bf05e.jpg" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                Macaron chanh bạc hà
+                            </h4>
+                            <p class="price">20.000 vnđ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/:slug">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden"
+                                src="https://i.pinimg.com/564x/bf/c3/92/bfc3920ddd9196a69502eeb7948bf05e.jpg" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                Macaron chanh bạc hà
+                            </h4>
+                            <p class="price">20.000 vnđ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/:slug">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden"
+                                src="https://i.pinimg.com/564x/bf/c3/92/bfc3920ddd9196a69502eeb7948bf05e.jpg" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                Macaron chanh bạc hà
+                            </h4>
+                            <p class="price">20.000 vnđ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/:slug">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden"
+                                src="https://i.pinimg.com/564x/bf/c3/92/bfc3920ddd9196a69502eeb7948bf05e.jpg" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                Macaron chanh bạc hà
+                            </h4>
+                            <p class="price">20.000 vnđ</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <%- include ('../patrials/footer.ejs')%>
+
+    </div>
+
+</body>
+
+</html>

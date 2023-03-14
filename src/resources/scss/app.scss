@@ -1,0 +1,337 @@
+@import "./variables";
+@import "./mixins";
+
+.app {
+  .header {
+    background-color: $base-color;
+    color: $white-text;
+    font-family: $default;
+    font-size: 1.2rem;
+
+    &__container {
+      width: $king-size;
+
+      hr {
+        border: none;
+        border-bottom: 1px solid $white-text;
+      }
+    }
+
+    &__logo {
+      width: 200px;
+    }
+  }
+
+  .poster {
+    &__background {
+      height: 49.375rem;
+      background-image: url(/images/backgrounds/bg-poster.png);
+      background-size: auto 100%;
+      opacity: 0.5;
+    }
+  }
+
+  .home__title {
+    width: $king-size;
+    @include title();
+  }
+
+  .home__products {
+    width: $king-size;
+    margin: 0 auto;
+
+    img {
+      width: 250px;
+    }
+
+    .content---title {
+      font-family: $default;
+    }
+
+    .content--price {
+      font-family: $title;
+      font-weight: 600;
+    }
+  }
+
+  .home__category {
+    .cate__bg {
+      height: 24.5rem;
+      background-image: url(/images/backgrounds/bg-header.png);
+      background-size: auto 100%;
+      opacity: 0.2;
+    }
+
+    .cate__container {
+      width: 65.375rem;
+
+      .cate--content {
+        .thumbnail {
+          width: 21rem;
+        }
+
+        .content__hover {
+          display: none;
+          width: 21rem;
+          height: 21rem;
+          background-color: $base-color;
+
+          span {
+            font-family: $default;
+            font-weight: bold;
+            color: $white-text;
+          }
+        }
+
+        .thumbnail-end {
+          img {
+            width: 10.5rem;
+          }
+        }
+
+        &:hover .content__hover {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .home__action {
+    font-family: $default;
+    i {
+      color: $default-color;
+    }
+  }
+
+  .shop__title {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url(/images/backgrounds/bg-header.png);
+    min-height: 390px;
+    font-family: $default;
+    color: $title-color;
+
+    .carte__active {
+      color: $black-text;
+    }
+  }
+
+  .shop__main {
+    width: $default-size;
+
+    &--left {
+      // background-color: $bg-color;
+      color: $default-color;
+
+      .thumbnail {
+        width: auto;
+        position: relative;
+
+        .img-under {
+          opacity: 0.3;
+          margin-top: 10px;
+        }
+
+        .img-above {
+          position: absolute;
+          bottom: 50px;
+          left: 100px;
+        }
+      }
+
+      .search {
+        width: auto;
+        position: relative;
+        color: $default;
+
+        input {
+          width: 100%;
+          outline: none;
+          border: 1px solid $default-color;
+          height: 50px;
+          border-radius: 50px;
+          padding: 5px 20px;
+          box-shadow: 1px 1px 10px $shadow-color;
+        }
+
+        i {
+          position: absolute;
+          top: 25%;
+          right: 10px;
+          color: $default-color;
+        }
+      }
+
+      ul {
+        font-family: $default;
+
+        a {
+          color: $black-text;
+        }
+      }
+    }
+
+    &--right {
+      .right-descr-title {
+        min-height: 360px;
+
+        .title {
+          font-family: $default;
+        }
+
+        .descrt {
+          font-family: $title;
+        }
+      }
+
+      .right__main {
+        font-family: $default;
+
+        ul {
+          color: $brrow-text;
+
+          .active {
+            border-bottom: 2px solid $default-color;
+            color: $default-color;
+          }
+        }
+
+        hr {
+          border: none;
+          border-bottom: 1px solid $default-color;
+        }
+
+        @include product();
+      }
+    }
+  }
+
+  .shop__category {
+    width: $default-size;
+    span{
+      font-family: $default;
+    }
+
+    p{
+      font-family: $title;
+    }
+  }
+
+  .shop__detail--main {
+    width: $default-size;
+
+    .detail-top {
+      font-family: $title;
+
+      .product__name {
+        font-family: $default;
+      }
+
+      hr {
+        border-bottom: 1px solid $default-color;
+        width: 70%;
+      }
+
+      .counter{
+        @include counter();
+      }
+
+      button {
+        @include button();
+      }
+    }
+  }
+
+  .shop__detail--more {
+    width: $default-size;
+    font-family: $default;
+
+    ul {
+      color: $brrow-text;
+
+      .active {
+        border-bottom: 2px solid $default-color;
+        color: $default-color;
+      }
+    }
+
+    hr {
+      border: none;
+      border-bottom: 1px solid $default-color;
+    }
+
+    .detail--main {
+      font-family: $title;
+    }
+
+    .order {
+      @include button();
+      font-size: 20px;
+    }
+  }
+
+  .shop__detail--title {
+    @include title();
+    width: $default-size;
+
+    hr {
+      width: 36%;
+    }
+  }
+
+  .shop__product--more {
+    width: $default-size;
+
+    @include product();
+  }
+
+  .cart__main {
+    width: calc($default-size + 88px);
+    font-family: $default;
+    color: $brrow-text;
+
+    .product {
+      background-color: $bg-cart-color;
+
+      .price {
+        font-family: $title;
+      }
+
+      .counter {
+        @include counter();
+      }
+    }
+
+    .cart__total{
+      padding-left: 150px;
+      padding-right: 235px;
+
+      .price{
+        font-family: $title;
+      }
+    }
+
+    .order{
+      @include button();
+      font-size: 20px;
+    }
+  }
+
+  footer {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url(/images/backgrounds/bg-poster.png);
+    background-position: center;
+    font-family: $default;
+    box-shadow: 0px -2px 50px $shadow-color;
+
+    .footer {
+      width: $default-size;
+      margin: 0 auto;
+    }
+  }
+}

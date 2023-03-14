@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwindCommon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Rinhy Pastry</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <%- include('../patrials/header'); %>
+
+            <section class="shop__title flex justify-start items-center pt-18 px-32 text-2xl font-bold">
+                <a href="">Trang chủ</a>
+                <span class="mx-2">/</span>
+                <a href="">Cửa hàng</a>
+                <span class="mx-2">/</span>
+            </section>
+
+            <section id="cateInfo" class="shop__category flex flex-col mx-auto justify-between">
+                <div class=" flex mx-auto justify-between p-12 border my-10">
+                    <div id="thumbnail" class="w-1/4">
+                        <img class="img" src="/images/products/macaron-main.png" alt="">
+                    </div>
+                    <div id="descr" class="right-descr-title pl-10 w-3/4 flex flex-col justify-center">
+                        <span class="cateName title text-4xl font-medium">
+                            Bánh Macaron
+                        </span>
+                        <p class="cateDescr descrt text-xl">
+                            Macaron hay bánh macaroon Pháp là một loại bánh ngọt dựa trên bánh trứng đường. Macaron được
+                            làm từ lòng trắng
+                            trứng,
+                            đường bột, đường hạt, bột hạnh nhân, và màu thực phẩm. Theo truyền thống, macaron được tổ
+                            chức đã được giới
+                            thiệu ở Pháp
+                            bởi đầu bếp người Ý của nữ hoàng Catherine De Medici trong thời Phục hưng
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class=" flex mx-auto justify-between p-12 border my-10">
+                    <div class="right-descr-title pl-10 w-3/4 flex flex-col justify-center">
+                        <span class="title text-4xl font-medium">
+                            Bánh Macaron
+                        </span>
+                        <p class="descrt text-xl">
+                            Macaron hay bánh macaroon Pháp là một loại bánh ngọt dựa trên bánh trứng đường. Macaron được
+                            làm từ lòng
+                            trắng
+                            trứng,
+                            đường bột, đường hạt, bột hạnh nhân, và màu thực phẩm. Theo truyền thống, macaron được tổ
+                            chức đã được giới
+                            thiệu ở Pháp
+                            bởi đầu bếp người Ý của nữ hoàng Catherine De Medici trong thời Phục hưng
+                        </p>
+                    </div>
+                    <div class="w-1/4">
+                        <img src="/images/products/macaron-main.png" alt="">
+                    </div>
+                </div>
+                <div class=" flex mx-auto justify-between p-12 border my-10">
+                    <div class="w-1/4">
+                        <img src="/images/products/macaron-main.png" alt="">
+                    </div>
+                    <div class="right-descr-title pl-10 w-3/4 flex flex-col justify-center">
+                        <span class="title text-4xl font-medium">
+                            Bánh Macaron
+                        </span>
+                        <p class="descrt text-xl">
+                            Macaron hay bánh macaroon Pháp là một loại bánh ngọt dựa trên bánh trứng đường. Macaron được
+                            làm từ lòng trắng
+                            trứng,
+                            đường bột, đường hạt, bột hạnh nhân, và màu thực phẩm. Theo truyền thống, macaron được tổ
+                            chức đã được giới
+                            thiệu ở Pháp
+                            bởi đầu bếp người Ý của nữ hoàng Catherine De Medici trong thời Phục hưng
+                        </p>
+                    </div>
+                </div>
+                <div class=" flex mx-auto justify-between p-12 border my-10">
+                    <div class="right-descr-title pl-10 w-3/4 flex flex-col justify-center">
+                        <span class="title text-4xl font-medium">
+                            Bánh Macaron
+                        </span>
+                        <p class="descrt text-xl">
+                            Macaron hay bánh macaroon Pháp là một loại bánh ngọt dựa trên bánh trứng đường. Macaron được
+                            làm từ lòng
+                            trắng
+                            trứng,
+                            đường bột, đường hạt, bột hạnh nhân, và màu thực phẩm. Theo truyền thống, macaron được tổ
+                            chức đã được giới
+                            thiệu ở Pháp
+                            bởi đầu bếp người Ý của nữ hoàng Catherine De Medici trong thời Phục hưng
+                        </p>
+                    </div>
+                    <div class="w-1/4">
+                        <img src="/images/products/macaron-main.png" alt="">
+                    </div>
+                </div>
+                <div class=" flex mx-auto justify-between p-12 border my-10">
+                    <div class="w-1/4">
+                        <img src="/images/products/macaron-main.png" alt="">
+                    </div>
+                    <div class="right-descr-title pl-10 w-3/4 flex flex-col justify-center">
+                        <span class="title text-4xl font-medium">
+                            Bánh Macaron
+                        </span>
+                        <p class="descrt text-xl">
+                            Macaron hay bánh macaroon Pháp là một loại bánh ngọt dựa trên bánh trứng đường. Macaron được
+                            làm từ lòng trắng
+                            trứng,
+                            đường bột, đường hạt, bột hạnh nhân, và màu thực phẩm. Theo truyền thống, macaron được tổ
+                            chức đã được giới
+                            thiệu ở Pháp
+                            bởi đầu bếp người Ý của nữ hoàng Catherine De Medici trong thời Phục hưng
+                        </p>
+                    </div>
+                </div> -->
+            </section>
+
+            <section class="shop__detail--title">
+                <hr>
+                <span>Sản phẩm nổi bật</span>
+                <hr>
+            </section>
+
+            <section class="shop__product--more flex justify-between mx-auto mb-18" id="productMore"> </section>
+
+            <%- include ('../patrials/footer.ejs')%>
+
+    </div>
+
+
+    <script>
+
+        let createCard = (category) => {
+            if (category.id % 2 == 0) {
+                thumbnail.className = "order-1";
+                descr.className = "order-2";
+            } else {
+                descr.className = "order-1";
+                thumbnail.className = "order-2";
+            }
+            let cateName = document.querySelectorAll('.cateName');
+            cateName.forEach(item => {
+                item.innerHTML = category.name;
+            })
+            let descr = document.querySelectorAll('.cateName');
+            descr.forEach(item => {
+                item.innerHTML = category.descr;
+            })
+            let img = document.querySelectorAll('.img');
+            img.forEach(item => {
+                item.src = `/${category.thumbnail}`
+            })
+        }
+
+        fetch(`http://localhost:3000/api/products/main/views`)
+            .then(res => res.json())
+            .then(categories => {
+                let thumbnail = document.getElementById('thumbnail');
+                let descr = document.getElementById('descr');
+                categories.forEach(category => {
+                    // createCard(category);
+                });
+            })
+
+        let card = (product, place) => {
+            document.getElementById(place).innerHTML += `
+                <div class="shop__content flex items-center flex-col">
+                    <a href="/shop/${product.cateId}/${product.id}">
+                        <div class="thumbnail">
+                            <img class="w-52 h-52 overflow-hidden" src="/${product.thumbnail}" alt="">
+                        </div>
+                        <div class="detail flex items-center flex-col text-xl mt-3">
+                            <h4 class="pro-name ">
+                                ${product.name}
+                            </h4>
+                            <p class="price">
+                                ${product.price.toLocaleString("it-IT", { style: "currency", currency: "VND" })}
+                            </p>
+                        </div>
+                    </a>
+                </div>  
+            `;
+        }
+
+        fetch(`http://localhost:3000/api/products/main/views`)
+            .then(res => res.json())
+            .then(products => {
+                for (let i = 0; i < 5; i++) {
+                    card(products[i], 'productMore')
+                }
+            })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<menu>
+    <div class="container">
+        <a href="/admin" class="logo">
+            <img src="/images/logos/logo-no-left-white2.png" alt="">
+        </a>
+        <hr class="my-4">
+        <ul class="navbar text-left text-lg text-white">
+            <li class="pt-2">
+                <a class="navbar-link flex flex-row items-center " href="/admin">
+                    <i class='bx bx-store-alt mr-3'></i>
+                    <span>Bảng điều khiển</span>
+                </a>
+            </li>
+            <li class="pt-2">
+                <div class="navbar-link">
+                    <p onclick="dropDown(this)" class="sub-menu flex flex-row items-center relative cursor-pointer">
+                        <i class='bx bx-category-alt mr-3'></i>
+                        <span>Danh mục</span>
+                        <i class='bx bx-chevron-down bx-sm absolute -inset-y-0 right-0'></i>
+                    </p>
+                    <ul class="show ml-10 text-base static hidden">
+                        <li class="pt-2">
+                            <a class="block" href="/admin/categories-list">Danh sách</a>
+                        </li>
+                        <li class="pt-2">
+                            <a class="block" href="">Thêm</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="pt-2">
+                <div class="navbar-link">
+                    <p onclick="dropDown(this)" class="sub-menu flex flex-row items-center relative cursor-pointer">
+                        <i class='bx bx-cube-alt mr-3'></i>
+                        <span>Sản Phẩm</span>
+                        <i class='bx bx-chevron-down bx-sm absolute -inset-y-0 right-0'></i>
+                    </p>
+                    <ul class="show ml-10 text-base static hidden">
+                        <li class="pt-2">
+                            <a class="block" href="/admin/products-list">Danh sách</a>
+                        </li>
+                        <li class="pt-2">
+                            <a class="block" href="/admin/product-add">Thêm</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="pt-2">
+                <a class="fnavbar-link flex flex-row items-center " href="/admin/orders-list">
+                    <i class='bx bx-grid mr-3'></i>
+                    <span>Đơn hàng</span>
+                </a>
+            </li>
+            <li class="pt-2">
+                <a class="navbar-link flex flex-row items-center " href="">
+                    <i class='bx bx-user-circle mr-3'></i>
+                    <span>Người dùng</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</menu>
